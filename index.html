@@ -128,7 +128,7 @@
         height: 93px;
         width: 1px;
         background-color: black;
-        margin: 0 150px;
+        margin: 0 6vw;
       }
 
       .image-top {
@@ -175,6 +175,70 @@
         color: white;
         padding: 12px 0;
       }
+
+      @media screen and (max-width: 1400px) {
+        .box{
+            flex-direction: column;
+        }
+        .secondSection .vertical{
+            height: unset;
+
+        }
+
+        .vertical-title, .vertical-desc{
+            left: 45px;
+        }
+        .secondSection .box{
+            width: 50vw;
+        }
+        nav{
+            flex-direction: column;
+        }
+
+
+        footer{
+            display: none;
+        }
+        .firstsection {
+            flex-direction: column-reverse;
+        }
+
+        .leftsection{
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .rightsection{
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .rightsection img{
+            width: 45vw;
+            margin-bottom: 73px;
+        }
+
+        .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 141vh;
+        }
+
+        body{
+            min-width: fit-content;
+        }
+
+        .image-top{
+            top: 133px
+            ;
+        }
+      }
     </style>
   </head>
   <body>
@@ -184,6 +248,8 @@
         <div class="right">
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -192,14 +258,14 @@
     <main>
       <section class="firstsection">
         <div class="leftsection">
-          Hi, My name is
-          <span class="black">S Nithin</span>
+          <div>Hi, My name is
+          <span class="black">S Nithin</span></div>
           <div>I am a student</div>
           <div>Pursuing BTech in</div>
           <div>R V University</div>
           <span id="element"></span>
           <div class="button">
-            <button class="btn"><a href=""></a> Visit Github</button>
+            <button class="btn"><a href="https://github.com/eating-water" target="_blank">Visit Github</a> </button>
           </div>
         </div>
 
@@ -247,35 +313,7 @@
               Beginning with JavaScript, I've covered foundational concepts like
               variables, data types, and basic control structures.
             </div>
-          </div>
-        </div>
-      </section>
-      <hr />
-      <section class="secondSection">
-        <span class="text-white">Educational institutions where I've pursued/pursuing my academic qualifications.</span>
-        <h1>Eduactional Qualification</h1>
-        <div class="box">
-          <div class="vertical">
-            <img class="image-top" src="lg.png" alt="Army Public School PRTC" />
-            <div class="vertical-title">School</div>
-            <div class="vertical-desc">
-                I completed my schooling at Army Public School, PRTC, achieving an 80% score in my 10th-grade examinations.
-            </div>
-          </div>
-          <div class="vertical">
-            <img class="image-top" src="sclg.png" alt="Sri Chaitanya Techno-school" />
-            <div class="vertical-title">College</div>
-            <div class="vertical-desc">
-                Concluded my college journey at Sri Chaitanya, securing 81% in the 12th-grade examinations.
-            </div>
-        </div>
-        <div class="vertical">
-            <img class="image-top" src="unlg.png" alt="RV University " />
-            <div class="vertical-title">University</div>
-            <div class="vertical-desc">
-                Currently pursuing my degree at RV University, actively working towards completion.
-            </div>
-        </div>
+          </div>    
         </div>
       </section>
     </main>
@@ -285,7 +323,7 @@
         <div class="footer-second">
           <ul>
             <li>Contact: +91 7892357894</li>
-            <li>E-mail: nithinseenivasan75@gmail.com</li>
+            <li>E-mail: snithin.btech23@rvu.edu.in</li>
           </ul>
         </div>
       </div>
